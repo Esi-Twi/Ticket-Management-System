@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.keys {
+    background-color: rgb(37, 37, 37);
+}
+
+ .punch p {
+    @apply rounded cursor-pointer center keys w-[2rem] med:w-[3rem] h-[2rem] med:h-[3rem] text-lg med:text-xl;
+}
+
+.output div {
+    @apply center h-[2rem] med:h-[2.2rem] w-[0.5] med:w-[0.6rem] text-lg med:text-xl;
+}
+
+.trans-button button {
+    @apply py-[7px] w-[8rem] out:w-[10rem] sm:w-[12rem] rounded text-sm out:text-lg center;
+}
+
+.clicked {
+    @apply bg-yellow-500 text-black;
+}
+
+.summary div {
+    @apply text-center;
+}
+.summary div h1 {
+    @apply font-bold text-sm med:text-base text-blue-600
+}
+.summary div p {
+    @apply text-3xl
+} 
